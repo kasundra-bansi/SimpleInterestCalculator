@@ -9,10 +9,10 @@ public class SimpleInterestCalculator extends JFrame implements ActionListener {
     JButton b1,b2;
 
     public SimpleInterestCalculator(){
-        setTitle("Simple Interest Modified Calculator");
+        setTitle("Simple Interest Calculator - Version 2");
 
-        getContentPane().setBackground(Color.CYAN);
-        
+        getContentPane().setBackground(new Color(230, 240, 255));
+
         l1=new JLabel("Principal");
         l2=new JLabel("Rate");
         l3=new JLabel("Time (Years)");
@@ -23,8 +23,8 @@ public class SimpleInterestCalculator extends JFrame implements ActionListener {
         t3=new JTextField();
         t4=new JTextField();
 
-        b1=new JButton("Calculate");
-        b2=new JButton("Clear");
+        b1 = new JButton("Calculate SI");
+        b2 = new JButton("Reset");
 
         setLayout(null);
 
@@ -40,8 +40,8 @@ public class SimpleInterestCalculator extends JFrame implements ActionListener {
         l4.setBounds(50,190,120,30);
         t4.setBounds(180,190,150,30);
 
-        b1.setBounds(60,250,120,40);
-        b2.setBounds(210,250,120,40);
+        b1.setBounds(50,250,140,45);
+        b2.setBounds(210,250,140,45);
 
         add(l1);
         add(l2);
@@ -60,7 +60,10 @@ public class SimpleInterestCalculator extends JFrame implements ActionListener {
         b2.addActionListener(this);
 
         b1.setBackground(Color.GREEN);
+        b1.setForeground(Color.WHITE);
+
         b2.setBackground(Color.RED);
+        b2.setForeground(Color.WHITE);
 
         setSize(420,380);
         setVisible(true);
@@ -98,9 +101,3 @@ public class SimpleInterestCalculator extends JFrame implements ActionListener {
     }
 
 }
-
-
-
-setTitle("Simple Interest Calculator v2");
-
-getContentPane().setBackground(Color.CYAN);
